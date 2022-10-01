@@ -1,3 +1,4 @@
+/* eslint-disable no-debugger, no-console */
 import React, { useState, useContext } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { FaUser } from 'react-icons/fa';

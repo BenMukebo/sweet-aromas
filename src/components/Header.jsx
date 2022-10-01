@@ -1,3 +1,4 @@
+/* eslint-disable no-debugger, no-console */
 import React, { useState, useEffect, useContext } from 'react';
 import PropTypes from 'prop-types';
 import axios from 'axios';
