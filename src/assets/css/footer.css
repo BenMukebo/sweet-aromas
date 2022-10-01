@@ -5,6 +5,7 @@ footer {
   background-color: var(--white);
   box-shadow: 0 7px 20px var(--darker-primary);
   margin-top: auto;
+
   /* position: absolute;
   bottom: 0; */
   width: 100%;
@@ -59,6 +60,7 @@ footer {
     justify-content: flex-start;
     align-items: flex-start;
     padding-left: 2rem;
+
     /* box-shadow: 0 7px 20px var(--darker-primary); */
   }
 
