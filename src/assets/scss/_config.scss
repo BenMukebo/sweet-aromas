@@ -59,10 +59,9 @@ button {
 }
 
 %h2-properties {
-  font-size: 28px;
-  // font-size: 32px;
+  font-size: 18px;
   letter-spacing: 0.06em;
-  line-height: 40px;
+  line-height: 28px;
   text-transform: uppercase;
 
   &::after {
@@ -74,6 +73,23 @@ button {
   }
 }
 
+@media screen and (min-width: 480px) {
+  %h2-properties {
+    font-size: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  %h2-properties {
+    font-size: 22px;
+  }
+}
+
+@media screen and (min-width: 922px) {
+  %h2-properties {
+    font-size: 24px;
+  }
+}
 // a {
 //   text-decoration: none;
 // }

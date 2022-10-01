@@ -133,7 +133,7 @@ const LandingPage = () => {
                 <p>Magnus Ben</p>
               </li>
               <li>
-                <p><strong>Must be 21 or older.</strong></p>
+                <p><strong>Must be 23 or older.</strong></p>
               </li>
             </ul>
           </div>
@@ -156,7 +156,7 @@ const LandingPage = () => {
           <ul>
             {data.map((item) => <Toggle key={item.id} toggle={item} />)}
             <li>
-              <button type="button">Request a Free Demo Now</button>
+              <button type="button">Request a Free Demo</button>
             </li>
           </ul>
         </article>

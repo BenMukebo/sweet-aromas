@@ -15,6 +15,9 @@
   --desktop: 1200px;
   --mobile: 480px;
   --body-bg: #352a22;
+  --p-mobsize: 13px;
+  --p-tabsize: 14px;
+  --p-desksize: 16px;
 }
 
 body {

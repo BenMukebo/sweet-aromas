@@ -17,9 +17,9 @@
   @include d-flex(column);
 
   align-items: flex-start;
-  min-height: 540px;
+  min-height: 400px;
   margin: 0 auto;
-  padding: 3rem 2rem 4rem;
+  padding: 3rem 1rem 2rem;
   // background: linear-gradient(90deg, rgba(255, 255, 255, 0.489) 13.02%, rgba(255, 255, 255, 0.364) 99.99%),
   background:
     linear-gradient(90deg, rgb(4 2 2 / 63%) 13.02%, rgb(148 74 74 / 29%) 99.99%),
@@ -35,15 +35,13 @@
   // background-position: center center;
   // background: url('../img/landing5.jpg') no-repeat;
   h1 {
-    font-size: 42px;
-    // color: var(--dark);
+    font-size: 24px;
   }
 
   p {
-    font-size: 18px;
-    line-height: 1.4;
-    margin: 3rem auto 4rem;
-    // color: var(--black);
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 1.5rem auto 3rem;
   }
 
   .signup-btn {
@@ -51,8 +49,8 @@
     color: var(--light-color);
     letter-spacing: 1px;
     border-radius: 4px;
-    padding: 0.8rem 1.2rem;
-    font-size: 1.2rem;
+    padding: 0.6rem 1rem;
+    font-size: 14px;
     font-weight: var(--light-weight);
     transition: all 0.4s ease-in-out;
 
@@ -66,10 +64,10 @@
 .landing-main {
   @include d-flex(column);
   // align-items: flex-start;
-  padding: 1rem;
+  padding: 1rem 0;
 
   article {
-    padding: 1rem;
+    padding: 1rem 0;
     max-width: 600px;
 
     img {
@@ -83,15 +81,15 @@
     }
 
     p {
-      font-size: 16px;
-      line-height: 26px;
+      font-size: var(--p-mobsize);
+      line-height: 20px;
       margin-top: 24px;
     }
   }
 
   aside {
     background: #fffaf1 url(../img/landing/background-pattern.png) center center repeat;
-    padding: 20px;
+    padding: 10px;
     height: 100%;
     width: 100%;
 
@@ -114,12 +112,12 @@
       // background: #A6631B;
       background: var(--primary);
       font-weight: 500;
-      font-size: 18px;
+      font-size: 14px;
       letter-spacing: 0.04em;
       line-height: 22px;
       text-align: center;
       color: var(--white);
-      padding: 17px;
+      padding: 15px;
     }
 
     ul {
@@ -135,15 +133,15 @@
       position: relative;
       color: var(--secondary);
       letter-spacing: 0;
-      margin-bottom: 6px;
+      margin-bottom: 3px;
     }
 
     li p {
       font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-      font-size: 16px;
-      line-height: 26px;
+      font-size: var(--p-mosize);
+      line-height: 24px;
       color: var(--body-bg);
-      margin-bottom: 1.5rem;
+      margin-bottom: 0.8rem;
     }
 
     li span {
@@ -160,14 +158,14 @@
 .landing-dev {
   background: #fffaf1 url(../img/landing/background-pattern.png) center center repeat;
   background-attachment: fixed;
-  padding: 2rem;
+  padding: 0.5rem;
   width: 100%;
 
   @include d-flex(column);
 
   .curbsideImg {
-    padding: 1.5rem;
-    width: 90%;
+    padding: 0.5rem;
+    width: 100%;
     max-width: 600px;
     // margin: 0 auto;
     border-radius: 16px;
@@ -181,11 +179,12 @@
 
   article {
     width: 100%;
-    padding: 2rem 1rem 1rem;
+    padding: 2rem 0 1rem;
 
     h2 {
       max-width: 480px;
-      width: 90%;
+      max-width: 640px;
+      // margin: 0 auto;
 
       @extend %h2-properties;
 
@@ -212,12 +211,13 @@
         text-align: center;
 
         button {
-          font-size: 20px;
-          padding: 20px 25px;
+          font-weight: 500;
+          font-size: var(--p-mosize);
+          padding: 14px 10px;
           color: var(--white);
           background-color: var(--primary);
           border-radius: 6px;
-          margin: 12px auto;
+          margin: 12px auto 0;
         }
       }
 
@@ -229,7 +229,7 @@
         padding: 18px 0 10px;
 
         .header-icon {
-          width: 24px;
+          width: 18px;
           margin-right: 12px;
 
           img {
@@ -238,14 +238,15 @@
         }
 
         h4 {
-          font-size: 16px;
-          line-height: 24px;
+          font-size: 14px;
+          line-height: 18px;
           color: var(--secondary);
         }
 
         .show-btn {
           @include d-flex(row);
 
+          font-size: 20px;
           align-items: center;
           justify-content: center;
           transition: all 0.5s ease;
@@ -257,15 +258,15 @@
           }
 
           & > * {
-            font-size: 24px;
+            font-size: 20px;
           }
         }
       }
 
       p {
         color: #666;
-        font-size: 15px;
-        line-height: 24px;
+        font-size: 12px;
+        line-height: 20px;
         padding-bottom: 1.3rem;
       }
     }
@@ -292,9 +293,104 @@
   }
 }
 
+@media screen and (min-width: 480px) {
+  .landing-header {
+    padding: 3rem 2rem 4rem;
+
+    h1 {
+      font-size: 28px;
+    }
+
+    p {
+      font-size: 16px;
+    }
+
+    .signup-btn {
+      letter-spacing: 2px;
+      padding: 0.8rem 1.2rem;
+      font-size: 16px;
+    }
+  }
+
+  .landing-main {
+    article {
+      p {
+        font-size: 14px;
+        line-height: 26px;
+        margin-top: 24px;
+      }
+    }
+
+    aside {
+      padding: 20px;
+
+      button {
+        font-size: 18px;
+        // padding: 18px;
+      }
+
+      li h4 {
+        letter-spacing: 0;
+        margin-bottom: 6px;
+      }
+
+      li p {
+        font-size: 14px;
+        line-height: 26px;
+        margin-bottom: 1.5rem;
+      }
+    }
+  }
+
+  .landing-dev {
+    .curbsideImg {
+      margin: 2rem 0 3rem;
+    }
+
+    article {
+      padding: 2rem 1rem 1rem;
+
+      li {
+        &:last-child button {
+          font-weight: 500;
+          font-size: var(--p-desksize);
+          padding: 12px;
+        }
+
+        .curbside-header {
+          .header-icon {
+            width: 22px;
+            margin-right: 14px;
+          }
+
+          .show-btn > * {
+            font-size: 24px;
+          }
+        }
+      }
+    }
+  }
+}
+
 @media screen and (min-width: 768px) {
   .landing-header {
     padding: 4rem 8%;
+
+    h1 {
+      // font-size: 48px;
+    }
+
+    p {
+      // font-size: 20px;
+      padding: 2rem 1rem 3rem;
+      line-height: 1.6;
+    }
+
+    .signup-btn {
+      letter-spacing: 2px;
+      padding: 0.6rem 1rem;
+      font-size: 1.2rem;
+    }
   }
 
   .landing-main {
@@ -307,28 +403,51 @@
       min-width: 300px;
       margin-left: 1%;
       transform: translateY(-8.5rem);
+
+      button {
+        font-size: 16px;
+        letter-spacing: 0.04em;
+        line-height: 22px;
+      }
+
+      li h4 {
+        letter-spacing: 0;
+        margin-bottom: 6px;
+      }
+
+      li p {
+        font-size: 14px;
+        margin-bottom: 1.5rem;
+      }
     }
   }
 
   .landing-dev {
     .curbsideImg {
+      padding: 1rem;
       margin: 2rem 0 3rem;
     }
 
     article {
-      li .curbside-header {
-        .header-icon {
-          width: 28px;
-          margin-right: 14px;
-        }
-
-        h4 {
+      li {
+        &:last-child button {
+          font-weight: 500;
           font-size: 18px;
-          line-height: 28px;
+          padding: 12px;
+          font-size: 20px;
+          padding: 20px 25px;
         }
 
-        .show-btn > * {
-          font-size: 28px;
+        .curbside-header {
+          .header-icon {
+            width: 24px;
+            margin-right: 14px;
+          }
+
+          h4 {
+            font-size: var(--p-desksize);
+            // line-height: 24px;
+          }
         }
       }
 
@@ -349,11 +468,12 @@
     }
 
     p {
-      font-size: 24px;
+      font-size: 22px;
     }
 
     .signup-btn {
       font-size: 1.4rem;
+      padding: 0.8rem 1.2rem;
     }
   }
 
@@ -361,8 +481,11 @@
     justify-content: space-around;
     padding: 1rem 4%;
 
+    article p {
+      font-size: 18px;
+    }
+
     aside {
-      // min-width: 400px;
       max-width: 400px;
       margin-left: 3%;
     }
@@ -377,15 +500,25 @@
     align-items: flex-start;
     justify-content: space-around;
 
+    .curbsideImg {
+      max-width: 500px;
+    }
+
     article {
-      // margin-left: 1%;
+      margin-left: 1%;
       width: 480px;
       padding-bottom: 0;
-
-      h2 {
-        // max-width: 480px;
-        width: 100%;
-      }
     }
+
+    // article {
+    // li{
+    //   &:last-child button {
+    //     font-weight: 500;
+    //     font-size: 18px;
+    //     padding: 12px;
+    //     padding: 20px 25px;
+    //   }
+    // }
+    // }
   }
 }

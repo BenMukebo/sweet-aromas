@@ -6,7 +6,7 @@
   align-items: center;
   justify-content: center;
   // height: 70vh;
-  padding: 2rem 1rem;
+  padding: 2rem 0;
   width: 100%;
   // background-color: red;
 
@@ -24,12 +24,13 @@
   }
 
   .portfolio-slider {
-    padding: 1rem;
+    padding: 1rem 0;
     width: 100%;
     overflow: hidden;
 
     .swiper-wrapper {
       display: flex;
+      flex-wrap: wrap;
       width: 100%;
       // flex-wrap: wrap;
     }
@@ -38,6 +39,7 @@
       // width: 16rem;
       width: 100%;
       overflow: visible !important;
+      flex: 1;
       // height: 8rem;
     }
 
