@@ -24,13 +24,18 @@
 - ![CSS3](https://img.shields.io/badge/-CSS3-000000?style=flat&logo=css3&logoColor=ffffff&labelColor=1572B6)
 - ![Sass](https://img.shields.io/badge/-Sass-000000?style=flat&logo=sass&logoColor=ffffff&labelColor=%23CC6699)
 
-## Live Demo 🔗
+## Live Demo Link 🔗
 
-[Live Demo Link](https://recipes-catalogue-plus.netlify.app/recipes/)
+[Live Demo](https://sweet-aromas.netlify.app/)
+
+
+## Back-end Repo Link 🔗
+
+[Back-end](https://github.com/BenMukebo/sweet-aromas-api)
 
 ## Documentation Demo 🔗
 
-[Documentation Link](https://sweetaromas.herokuapp.com/api-docs/)
+[Documentation](https://sweetaromas.herokuapp.com/api-docs/)
 
 <!-- ## TheMealDB
 
@@ -89,19 +94,18 @@ $  npx stylelint "**/*.{css,scss}" --fix
 
 ## Authors
 
-👤 **Barack Mukelenga**
-
-- GitHub: [@barackm](https://github.com/barackm)
-- Twitter: [@BarackMukelenga](https://twitter.com/BarackMukelenga)
-- LinkedIn: [Baraka Mukelenga](https://www.linkedin.com/in/baraka-mukelenga/)
-- Portfolio: [Barackm](https://barackm.me)
-
 👤 **Ben Mukebo**
 
 - GitHub: [@BenMukebo](https://github.com/BenMukebo)
 - Twitter [@BenMukebo](https://twitter.com/BenMukebo)
 - LinkedIn [BenMukebo](https://www.linkedin.com/in/kasongo-mukebo-ben-591720205/)
 
+👤 **Barack Mukelenga**
+
+- GitHub: [@barackm](https://github.com/barackm)
+- Twitter: [@BarackMukelenga](https://twitter.com/BarackMukelenga)
+- LinkedIn: [Baraka Mukelenga](https://www.linkedin.com/in/baraka-mukelenga/)
+- Portfolio: [Barackm](https://barackm.me)
 
 ## 🤝 Contributing
 
@@ -122,6 +126,6 @@ Give a ⭐️ if you like this project! ❤️
 
 The MIT License (MIT)
 
+Copyright (c) 2022 [Ben Mukebo](https://www.benmukebo.me/)
 Copyright (c) 2021 [Baraka Mukelenga](https://barackm.me)
 
-Copyright (c) 2022 [Ben Mukebo](https://www.benmukebo.me/
