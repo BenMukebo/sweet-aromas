@@ -65,7 +65,7 @@ header {
 }
 
 .nav-logo-wrapper .top {
-  margin-left: 5rem;
+  margin-left: 2.8rem;
   margin-right: 5rem;
 }
 
@@ -206,6 +206,10 @@ header {
 }
 
 @media (max-width: 992px) {
+  .nav-logo-wrapper .top {
+    margin-left: 2.3rem;
+  }
+
   .close-menu-btn {
     display: block;
   }
@@ -285,7 +289,7 @@ header {
   }
 
   .nav-logo-wrapper {
-    margin-left: 4rem;
+    /* margin-left: 4rem; */
   }
 
   .div-logo {
@@ -331,7 +335,7 @@ header {
   }
 
   .nav-logo-wrapper {
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
   }
 
   .nav-links-wrapper {
@@ -357,7 +361,11 @@ header {
 
 @media (max-width: 480px) {
   .nav-logo-wrapper {
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
+  }
+
+  .nav-logo-wrapper .top {
+    margin-left: 1.5rem;
   }
 
   .div-logo {
