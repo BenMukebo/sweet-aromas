@@ -39,7 +39,7 @@ const Navbar = () => {
   return (
     <div className={showMenu ? 'main-navbar-container d-flex open' : 'main-navbar-container d-flex'}>
       <NavLink to={logoDirectTo} className="nav-logo-wrapper d-flex flex-center">
-        <div className="div-logo">
+        <div className="div-logo top">
           <img src={logo} alt={logo} />
         </div>
       </NavLink>

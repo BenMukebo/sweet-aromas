@@ -20,7 +20,7 @@ const Footer = () => (
         , Built with  ❤️
       </span>
       <p className="d-flex">
-        <a href="https://barackm.me" target="_blank" rel="noreferrer" style={{ marginLeft: '5px', marginRight: '5px' }}>
+        <a href="https://barackm.me" target="_blank" rel="noreferrer" style={{ marginRight: '5px' }}>
           @Barack_Mukelenga
         </a>
         &

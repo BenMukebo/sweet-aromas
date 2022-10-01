@@ -1,18 +1,19 @@
 footer {
-  /* margin-top: 1rem; */
-  padding-top: 2rem;
+  padding: 2rem 1rem 0;
   padding-bottom: 1rem;
   background-color: var(--white);
   box-shadow: 0 7px 20px var(--darker-primary);
   margin-top: auto;
-
-  /* position: absolute;
-  bottom: 0; */
+  justify-content: space-around;
   width: 100%;
 }
 
+.footer-attribution {
+  justify-content: space-around;
+}
+
 .footer-links-wrapper {
-  margin-right: 6rem;
+  /* margin-right: 3rem; */
 }
 
 .footer-attribution a {
@@ -20,7 +21,7 @@ footer {
 }
 
 .footer-links-wrapper li a {
-  padding: 0 1rem;
+  padding: 0 0.5rem;
 }
 
 .footer-github-icon {
@@ -36,32 +37,21 @@ footer {
   min-width: 80px;
 }
 
-.twitter {
-  display: block;
-}
-
 @media (max-width: 900px) {
   .nav-logo-wrapper.footer {
-    margin-left: 4rem;
+    margin-left: 2rem;
   }
 
   .footer-links-wrapper.footer-links {
-    margin-right: 4rem;
-  }
-
-  .twitter {
-    display: none;
+    margin-left: 2rem;
+    margin-right: 1rem;
   }
 }
 
 @media (max-width: 768px) {
   .footer-main-container {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    padding-left: 2rem;
-
-    /* box-shadow: 0 7px 20px var(--darker-primary); */
+    flex-wrap: wrap;
+    padding-left: 1rem;
   }
 
   .nav-logo-wrapper.footer {

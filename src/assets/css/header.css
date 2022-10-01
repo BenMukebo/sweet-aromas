@@ -59,11 +59,14 @@ header {
 }
 
 .nav-logo-wrapper {
-  margin-left: 5rem;
-  margin-right: 5rem;
   font-weight: 900;
   font-size: 2rem;
   color: var(--dark);
+}
+
+.nav-logo-wrapper.top {
+  margin-left: 5rem;
+  margin-right: 5rem;
 }
 
 .div-logo {
