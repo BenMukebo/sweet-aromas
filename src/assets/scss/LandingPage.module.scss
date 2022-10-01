@@ -138,8 +138,9 @@
 
     li p {
       font-family: 'Montserrat', Arial, Helvetica, sans-serif;
-      font-size: var(--p-mosize);
-      line-height: 24px;
+      // font-size: var(--p-mosize);
+      font-size: 12px;
+      line-height: 20px;
       color: var(--body-bg);
       margin-bottom: 0.8rem;
     }
@@ -302,20 +303,20 @@
     }
 
     p {
-      font-size: 16px;
+      font-size: var(--p-tabsize);
     }
 
     .signup-btn {
       letter-spacing: 2px;
       padding: 0.8rem 1.2rem;
-      font-size: 16px;
+      font-size: var(--p-tabsize);
     }
   }
 
   .landing-main {
     article {
       p {
-        font-size: 14px;
+        font-size: var(--p-tabsize);
         line-height: 26px;
         margin-top: 24px;
       }
@@ -325,7 +326,7 @@
       padding: 20px;
 
       button {
-        font-size: 18px;
+        font-size: var(--p-desksize);
         // padding: 18px;
       }
 
@@ -335,7 +336,7 @@
       }
 
       li p {
-        font-size: 14px;
+        font-size: var(--p-desksize);
         line-height: 26px;
         margin-bottom: 1.5rem;
       }
@@ -396,6 +397,10 @@
   .landing-main {
     @include d-flex(row);
 
+    article p {
+      font-size: var(--p-desksize);
+    }
+
     align-items: flex-start;
     justify-content: space-around;
 
@@ -416,7 +421,7 @@
       }
 
       li p {
-        font-size: 14px;
+        font-size: var(--p-desksize);
         margin-bottom: 1.5rem;
       }
     }
@@ -432,8 +437,6 @@
       li {
         &:last-child button {
           font-weight: 500;
-          font-size: 18px;
-          padding: 12px;
           font-size: 20px;
           padding: 20px 25px;
         }

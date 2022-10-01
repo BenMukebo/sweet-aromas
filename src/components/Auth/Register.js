@@ -100,9 +100,8 @@ const Register = () => {
           <button type="submit">Sign Up</button>
         </form>
         <p className={styles.signup}>
-          Already have an account?
-          {' '}
-          <Link to="/login">
+          <span> Already have an account? </span>
+          <Link to="/login" className={styles.login}>
             Login
           </Link>
         </p>

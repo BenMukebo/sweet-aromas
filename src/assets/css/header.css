@@ -51,6 +51,7 @@ header {
   cursor: pointer;
   padding: 0.5rem;
   display: none;
+  color: var(--dark);
 }
 
 .close-menu-icon {
@@ -208,7 +209,7 @@ header {
 
   .links-container {
     position: fixed;
-    width: 50% !important;
+    width: 60% !important;
     left: 0;
     height: 100vh;
     top: 0;
@@ -266,7 +267,7 @@ header {
 
   .signup-btn {
     /* margin-left: 0; */
-    margin-top: 1.5rem;
+    margin: 1.5rem auto 0;
     font-size: 1rem;
     padding: 0.8rem 0.9rem;
   }

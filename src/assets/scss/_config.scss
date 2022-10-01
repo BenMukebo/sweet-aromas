@@ -27,9 +27,9 @@ $box-shadow: 2px 2px 20px var(--darker-primary);
 }
 
 %btn-properties {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bold;
-  padding: 8px 20px;
+  padding: 6px 15px;
   border-radius: 32px;
   background-color: var(--primary);
   color: var(--white);
@@ -75,19 +75,19 @@ button {
 
 @media screen and (min-width: 480px) {
   %h2-properties {
-    font-size: 20px;
+    font-size: 22px;
   }
 }
 
 @media screen and (min-width: 768px) {
   %h2-properties {
-    font-size: 22px;
+    font-size: 24px;
   }
 }
 
 @media screen and (min-width: 922px) {
   %h2-properties {
-    font-size: 24px;
+    font-size: 26px;
   }
 }
 // a {

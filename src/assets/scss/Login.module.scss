@@ -1,9 +1,12 @@
 @import 'config';
 
 .login-register {
+  @include d-flex(column);
+
+  justify-content: center;
   width: 100%;
   height: 100vh;
-  padding: 2rem 1rem;
+  padding: 1rem;
   // background: linear-gradient(90deg, rgb(44 20 20 / 42%) 13.02%, rgb(38 19 19 / 58%) 99.99%),
   background:
     linear-gradient(90deg, rgb(0 0 0 / 41%) 13.02%, rgb(68 38 38 / 58%) 99.99%),
@@ -14,14 +17,15 @@
 
 .login-section,
 .register-section {
-  width: 90%;
+  width: 100%;
+  margin: 0 auto;
 
   @include d-flex(column);
 
   align-items: center;
   max-width: 580px;
-  padding: 2rem 1rem;
-  margin: 2rem auto 3rem;
+  padding: 1rem 0;
+  // margin: 2rem auto 3rem;
   border-radius: 16px;
   box-shadow: 5px 5px 30px var(--darker-primary);
   font-family: Libre Baskerville, serif;
@@ -32,8 +36,8 @@
   }
 
   .loginIcon svg {
-    width: 80px;
-    height: 80px;
+    width: 60px;
+    height: 60px;
     padding: 1rem 0;
     border-radius: 50%;
     background-color: var(--primary);
@@ -41,7 +45,7 @@
   }
 
   h2 {
-    font-size: 42px;
+    font-size: 1.6rem;
     font-weight: 400;
     text-align: center;
     color: var(--primary);
@@ -63,7 +67,7 @@
       justify-content: flex-start;
       align-items: center;
       margin-bottom: 1.5rem;
-      font-size: 20px;
+      font-size: 1rem;
 
       input {
         margin-right: 5px;
@@ -79,11 +83,12 @@
       justify-content: space-between;
       width: 100%;
       height: 50px;
-      margin-bottom: 1rem;
+      margin-bottom: 0.7rem;
       background-color: var(--light);
 
       .icon {
         color: var(--black);
+        font-size: var(--p-mobsize);
       }
 
       input {
@@ -91,7 +96,7 @@
         outline: none;
         background-color: transparent;
         width: 85%;
-        font-size: 18px;
+        font-size: 16px;
         transition: all 0.5s ease;
 
         &:hover {
@@ -134,10 +139,64 @@
       text-decoration: underline;
       color: var(--dark);
     }
+
+    .signup {
+      color: var(--secondary);
+    }
   }
 
   p.signup {
     // text-decoration: underline;
     font-size: 18px;
+
+    .login {
+      color: var(--secondary);
+    }
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .login-register {
+    padding: 2rem 1rem;
+  }
+
+  .login-section,
+  .register-section {
+    padding: 2rem 1rem;
+    margin: 2rem auto 3rem;
+
+    .loginIcon svg {
+      width: 80px;
+      height: 80px;
+    }
+
+    h2 {
+      font-size: 42px;
+    }
+
+    form {
+      .div-input {
+        width: 100%;
+        height: 50px;
+        margin-bottom: 1rem;
+
+        .icon {
+          font-size: 20px;
+        }
+
+        input {
+          font-size: var(--p-desksize);
+        }
+      }
+
+      button {
+        font-size: 1.5rem;
+        padding: 8px 20px;
+      }
+    }
+
+    .div-links {
+      font-size: 18px;
+    }
   }
 }
