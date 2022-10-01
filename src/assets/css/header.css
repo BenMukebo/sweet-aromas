@@ -64,7 +64,7 @@ header {
   color: var(--dark);
 }
 
-.nav-logo-wrapper.top {
+.nav-logo-wrapper .top {
   margin-left: 5rem;
   margin-right: 5rem;
 }
