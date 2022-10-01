@@ -16,6 +16,7 @@
 .recipe-instructions-details h1 {
   margin: 0;
   font-weight: 500;
+  margin-bottom: 1rem;
 }
 
 .recipe-instructions-details p {
