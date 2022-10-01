@@ -1,0 +1,143 @@
+@import 'config';
+
+.login-register {
+  width: 100%;
+  height: 100vh;
+  padding: 2rem 1rem;
+  // background: linear-gradient(90deg, rgb(44 20 20 / 42%) 13.02%, rgb(38 19 19 / 58%) 99.99%),
+  background:
+    linear-gradient(90deg, rgb(0 0 0 / 41%) 13.02%, rgb(68 38 38 / 58%) 99.99%),
+    url(../img/landing3.jpg) center center no-repeat;
+  background-size: cover;
+  // overflow: hidden;
+}
+
+.login-section,
+.register-section {
+  width: 90%;
+
+  @include d-flex(column);
+
+  align-items: center;
+  max-width: 580px;
+  padding: 2rem 1rem;
+  margin: 2rem auto 3rem;
+  border-radius: 16px;
+  box-shadow: 5px 5px 30px var(--darker-primary);
+  font-family: Libre Baskerville, serif;
+  background: #fffaf1 url(../img/landing/background-pattern.png) center center repeat;
+
+  &:hover {
+    transform: scale(1.01);
+  }
+
+  .loginIcon svg {
+    width: 80px;
+    height: 80px;
+    padding: 1rem 0;
+    border-radius: 50%;
+    background-color: var(--primary);
+    color: var(--white);
+  }
+
+  h2 {
+    font-size: 42px;
+    font-weight: 400;
+    text-align: center;
+    color: var(--primary);
+    font-family: inherit;
+  }
+
+  form {
+    width: 90%;
+    max-width: 500px;
+    padding: 1.5rem 0;
+
+    @include d-flex(column);
+
+    .div-checked {
+      width: 100%;
+
+      @include d-flex(row);
+
+      justify-content: flex-start;
+      align-items: center;
+      margin-bottom: 1.5rem;
+      font-size: 20px;
+
+      input {
+        margin-right: 5px;
+        cursor: pointer;
+      }
+    }
+
+    .div-input {
+      @extend %btn-properties;
+
+      @include d-flex(row-reverse);
+
+      justify-content: space-between;
+      width: 100%;
+      height: 50px;
+      margin-bottom: 1rem;
+      background-color: var(--light);
+
+      .icon {
+        color: var(--black);
+      }
+
+      input {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        width: 85%;
+        font-size: 18px;
+        transition: all 0.5s ease;
+
+        &:hover {
+          cursor: pointer;
+          transform: translateX(5px);
+          background-color: var(--light);
+        }
+      }
+
+      &:hover {
+        border: $border-size;
+      }
+    }
+
+    button {
+      @extend %btn-properties;
+
+      width: 90%;
+
+      &:hover {
+        transform: scale(1.1);
+      }
+
+      &:focus {
+        transform: scale(1.01);
+      }
+    }
+  }
+
+  .div-links {
+    width: 100%;
+
+    @include d-flex(row);
+
+    justify-content: space-between;
+    padding: 0 1rem;
+    font-size: 18px;
+
+    .password {
+      text-decoration: underline;
+      color: var(--dark);
+    }
+  }
+
+  p.signup {
+    // text-decoration: underline;
+    font-size: 18px;
+  }
+}

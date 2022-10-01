@@ -1,0 +1,73 @@
+@import '../../../assets/scss/config';
+
+.portfolio {
+  @include d-flex(column);
+
+  align-items: center;
+  justify-content: center;
+  // height: 70vh;
+  padding: 2rem 1rem;
+  width: 100%;
+  // background-color: red;
+
+  h2 {
+    @extend %h2-properties;
+
+    margin: 1rem auto;
+  }
+
+  /* slider */
+  .swiper {
+    overflow: visible !important;
+    background-color: rgba(245, 236, 236, 0.284);
+    width: 100%;
+  }
+
+  .portfolio-slider {
+    padding: 1rem;
+    width: 100%;
+    overflow: hidden;
+
+    .swiper-wrapper {
+      display: flex;
+      width: 100%;
+      // flex-wrap: wrap;
+    }
+
+    .swiper-slide {
+      // width: 16rem;
+      width: 100%;
+      overflow: visible !important;
+      // height: 8rem;
+    }
+
+    img {
+      // width: 15rem;
+      width: 100%;
+      height: 100%;
+      // filter: drop-shadow(-12px 15px 13px var(--darker-primary));
+
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: none;
+        opacity: 0.9;
+      }
+    }
+  }
+}
+
+// .swiper-container {
+//   width: 480px;
+// }
+
+// @media screen and (min-width: 640px) {
+//   .swiper-wrapper {
+//     width: 640px;
+//   }
+// }
+
+// @media screen and (min-width: 768px) {
+//   .swiper-wrapper {
+//     width: 768px;
+//   }
+// }

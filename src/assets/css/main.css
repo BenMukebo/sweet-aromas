@@ -1,0 +1,93 @@
+:root {
+  --dark: #333;
+  --black: #111;
+  --white: #fff;
+  --primary: #fbe0dc;
+  --secondary: #a6631b;
+  --light-weight: 400;
+  --dark-light-color: rgb(61, 61, 61);
+  --light-color: rgb(187, 187, 187);
+  --default-transition: all 0.2s ease-in-out;
+  --light: rgba(240, 236, 236, 0.795);
+  --danger: #e63900;
+  --darker-primary: #e0aea6;
+  --tablet: 768px;
+  --desktop: 1200px;
+  --mobile: 480px;
+  --body-bg: #352a22;
+}
+
+body {
+  max-width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  overflow-x: hidden;
+}
+
+#root {
+  width: 100%;
+  height: 100vh;
+}
+
+.ppp {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body > * {
+  margin: 0 auto;
+}
+
+ul {
+  padding: 0;
+}
+
+button {
+  cursor: pointer;
+}
+
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+.d-flex {
+  display: flex;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.flex-between {
+  justify-content: space-between;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-unit {
+  flex: 1;
+}
