@@ -114,7 +114,7 @@ const LandingPage = () => {
                   <span />
                   Location:
                 </h4>
-                <p>Kigai-city Town</p>
+                <p>Kigali-city Town</p>
               </li>
 
               <li className={styles.phone}>
